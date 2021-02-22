@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Title & Favicon -->
+    <title>Create Quote</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/add-customer-and-create-customer.css" />
+  </head>
+  <body>
+    <!-- Back to Home -->
+    <a href="index.html" class="back-to-home"><i class="fas fa-times"></i></a>
+    <!-- Create Quote  Start -->
+    <div
+      class="create-quote row d-flex align-items-center justify-content-center"
+    >
+      <div class="col-lg-8 col-xl-6 container text-center">
+        <h2>Quote Title</h2>
+        <form action="new-quote-customer.html">
+          <input
+            name="quote title"
+            class="text-center my-5"
+            placeholder="Ex. Qubic Company Quote"
+            type="text"
+          />
+          <!-- Mode -->
+          <div class="col- 7 col-xxl-5 m-auto">
+            <div class="mode">
+              <!-- Mode Toggle -->
+              <div
+                class="mode-toggle d-flex align-items-center justify-content-around"
+              >
+                <p class="text-end me-5 master-mode-p">Master Mode</p>
+                <input class="toggle-mode-checkbox" type="checkbox" />
+                <p class="text-start ms-5 individual-mode-p">Individual mode</p>
+              </div>
+              <!-- Master Mode Content -->
+              <div class="master-mode-content text-start my-5">
+                <h4>Apartments title</h4>
+                <input
+                  type="text"
+                  class="w-100 bg-light border-0 apartments-input my-3 text-dark"
+                  placeholder="Example"
+                />
+                <button
+                  class="w-100 border-0 add-apartments-btn my-3 text-center"
+                >
+                  Add a new Apartment
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="border-0 mt-5">Create</button>
+        </form>
+      </div>
+    </div>
+    <!-- Create Quote End -->
+
+    <!-- Toggle Mode Checkbox -->
+    <script>
+      let toggleModeCheckbox = document.querySelector(".toggle-mode-checkbox");
+      let masterModeP = document.querySelector(".master-mode-p");
+      let individualModeP = document.querySelector(".individual-mode-p");
+      let masterModeContent = document.querySelector(".master-mode-content");
+      toggleModeCheckbox.checked = true;
+      let isMasterMode;
+
+      toggleModeCheckbox.addEventListener("click", () => {
+        if (toggleModeCheckbox.checked == true) {
+          masterModeP.style.color = "#A8A8A8";
+          individualModeP.style.color = "#2680EB";
+          masterModeContent.style.display = "none";
+          isMasterMode = false;
+        } else {
+          masterModeP.style.color = "#2680EB";
+          individualModeP.style.color = "#A8A8A8";
+          masterModeContent.style.display = "block";
+          isMasterMode = true;
+        }
+        console.log(isMasterMode);
+      });
+    </script>
+  </body>
+</html>

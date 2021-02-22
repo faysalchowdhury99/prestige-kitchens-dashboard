@@ -1,0 +1,94 @@
+/* ================ */
+/* Basic */
+/* ================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "poligon-regular";
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+button:focus,
+input:focus,
+a:focus,
+i:focus,
+textarea:focus,
+video:focus {
+  outline: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* ================ */
+/* Fonts */
+/* ================ */
+@font-face {
+  font-family: "poligon-regular";
+  src: url("../fonts/Poligon-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "poligon-bold";
+  src: url("../fonts/Poligon-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "poligon-semi-bold";
+  src: url("../fonts/Poligon-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reuseable */
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none !important;
+  border-color: transparent !important;
+  border-width: 0px !important;
+}
+.para-text {
+  color: #2d344a;
+  font-size: 14px;
+}
+.media-body {
+  flex: 1;
+}
+h4,
+select {
+  font-family: "poligon-bold";
+  color: #2d344a;
+  font-size: 18px;
+}
+.details h6 {
+  font-family: "poligon-bold";
+  color: #6e799a;
+  width: 200px;
+}
+.details p {
+  color: #6e799a;
+}

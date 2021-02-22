@@ -1,0 +1,172 @@
+/* ================ */
+/* Add Customer Page && Create Quote Page && Upload Quote */
+/* ================ */
+.add-customer,
+.create-quote,
+.upload-quote {
+  min-height: 100vh;
+  background-image: url("../img/add-cutomer-and-quote/add-customer-and-quote-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.add-customer h2,
+.create-quote h2,
+.upload-quote h2 {
+  color: #2d344a;
+  font-size: 50px;
+  font-family: "poligon-bold";
+}
+.add-customer form input,
+.create-quote form input,
+.upload-quote input {
+  color: #212121;
+  border: none;
+  border-bottom: 4px solid #dbdbdb;
+  font-size: 45px;
+  width: 700px;
+  max-width: 100%;
+  background-color: transparent;
+}
+.add-customer form input::placeholder,
+.create-quote form input::placeholder,
+.upload-quote input::placeholder {
+  color: #f3f3f3;
+}
+.add-customer form button,
+.create-quote form button,
+.upload-quote form button {
+  background: #c4ac7a 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+  padding: 15px 40px;
+}
+/* Create Quote */
+.mode-toggle p {
+  flex: 2;
+  color: #a8a8a8;
+}
+.mode-toggle .individual-mode-p {
+  color: #2680eb;
+}
+.mode-toggle input[type="checkbox"] {
+  position: relative;
+  width: 35px;
+  height: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  border: 2px solid #2680eb;
+  cursor: pointer;
+}
+.mode-toggle input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #2680eb;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.mode-toggle input:checked[type="checkbox"]::before {
+  left: 17px;
+}
+.master-mode-content {
+  display: none;
+}
+.master-mode-content h4 {
+  font-family: "poligon-bold";
+  color: #2d344a;
+}
+.apartments-input {
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  padding: 10px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important;
+}
+.apartments-input::placeholder {
+  color: #2d344a !important;
+}
+.add-apartments-btn {
+  padding: 10px !important;
+  border-radius: 4px !important;
+  background: #eff4ff 0% 0% no-repeat padding-box !important;
+  color: #3062ff !important;
+  text-decoration: underline;
+}
+/* Upload Quote */
+.upload-quote .progress-box {
+  box-shadow: 0px 7px 25px #00000029;
+  border-radius: 11px;
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+}
+.upload-quote .progress-box p {
+  color: #2d344a;
+  font-family: "poligon-semi-bold";
+}
+.upload-quote .progress-box .progress-bar {
+  height: 0.35rem;
+  background-color: #edeef2;
+  border-radius: 11px;
+}
+.upload-quote .progress-box .progress-bar .progress {
+  background-color: #2680eb;
+}
+.upload-quote .cencel {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #ffd8d8;
+  color: #ff6d6d;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Back to Home */
+.back-to-home i {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  background-color: #dbdbdb;
+  color: #000000 !important;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

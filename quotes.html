@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Title & Favicon -->
+    <title>Quotes</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/side-list.css" />
+    <link rel="stylesheet" href="css/quotes.css" />
+  </head>
+  <body>
+    <!-- ============================= Start Header Section Here ============================= -->
+    <header class="header-section">
+      <nav
+        class="navbar navbar-expand-lg bg-white py-4 px-xxl-5 align-items-center border-bottom"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/quotes/logo.png" alt="logo" class="img-fluid"
+          /></a>
+          <a
+            href="javascript:void(0)"
+            class="back d-flex align-items-center ms-5 ps-5"
+          >
+            <img class="me-2" src="img/quotes/back-icon.png" alt="back" />
+            <p class="para-text">Back</p>
+          </a>
+          <div class="collapse navbar-collapse align-items-center">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active d-flex align-items-center"
+                  aria-current="page"
+                  href="javascript:void(0)"
+                  ><i class="fas fa-home me-1"></i><span>Home</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                  ><i class="fas fa-users me-1"></i><span>Customers</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    src="img/quotes/suppliers.svg"
+                    alt="suppliers"
+                    class="img-fluid me-1"
+                  />
+                  <span>Suppliers</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                  ><img
+                    src="img/quotes/users.svg"
+                    alt="admin"
+                    class="img-fluid me-1"
+                  /><span>Contacts</span></a
+                >
+              </li>
+            </ul>
+            <a
+              href="javascript:void(0)"
+              class="admin d-flex align-items-center"
+            >
+              <img
+                src="img/quotes/admin.png"
+                alt="admin"
+                class="admin-img me-2"
+              />
+              <div class="name">
+                <h5>John Doe</h5>
+                <p>Admin</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================= End Header Section Here ============================= -->
+
+    <!-- ============================= Start Dashboard Section Here ============================= -->
+    <section class="dashboard-section">
+      <div class="container-fluid px-xxl-5">
+        <div class="row">
+          <!-- Quote Box -->
+          <div class="col-xl-3 col-xxl-2">
+            <div class="side-list-box quote-box">
+              <!-- Select and Plus Button -->
+              <div class="px-3 pt-3 d-flex align-items-center">
+                <select class="border-0">
+                  <option value="All Quotes">All Quotes</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 2">Category 2</option>
+                </select>
+                <i class="fas fa-caret-down ms-2"></i>
+                <button class="add-btn border-0 ms-auto">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <!-- Search -->
+              <div class="px-3">
+                <form
+                  action="javascript:void(0)"
+                  class="seacrh my-3 d-flex align-items-center px-2"
+                >
+                  <input
+                    class="border-0 py-2"
+                    type="search"
+                    name="Seacrh"
+                    placeholder="Search Quotes"
+                  />
+                  <button class="border-0" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <!-- Quote Items -->
+              <div class="side-list-item quote-item">
+                <div class="dropdown-quote">
+                  <!-- Quote Item 1 -->
+                  <div
+                    class="side-list-item quote-item side-color-ffafaf py-3 px-4 border-top d-flex align-items-center"
+                  >
+                    <div class="num">#365</div>
+                    <div class="ms-3">
+                      <h4>
+                        Quote Title <i class="fas fa-caret-down ms-2"></i>
+                      </h4>
+                      <p class="date w-100 d-block">Jan 13, 2021</p>
+                    </div>
+                    <div class="dots ms-auto align-self-start">
+                      <a href="javascript:void(0)">
+                        <i class="fas fa-ellipsis-h"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="dropdown-quote-items w-100">
+                    <!-- Quote Item 2 -->
+                    <div
+                      class="side-list-item quote-item side-color-ffe2e2 py-3 px-4 border-top d-flex align-items-center"
+                    >
+                      <div class="num">#366</div>
+                      <div class="ms-3">
+                        <h4>Aprtment 1</h4>
+                        <p class="date w-100 d-block">Jan 13, 2021</p>
+                      </div>
+                      <div class="dots ms-auto align-self-start">
+                        <a href="javascript:void(0)">
+                          <i class="fas fa-ellipsis-h"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- Quote Item 3 -->
+                    <div
+                      class="side-list-item quote-item side-color-ffe2e2 py-3 px-4 border-top d-flex align-items-center"
+                    >
+                      <div class="num">#367</div>
+                      <div class="ms-3">
+                        <h4>Aprtment 2</h4>
+                        <p class="date w-100 d-block">Jan 13, 2021</p>
+                      </div>
+                      <div class="dots ms-auto align-self-start">
+                        <a href="javascript:void(0)">
+                          <i class="fas fa-ellipsis-h"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- Quote Item 4 -->
+                    <div
+                      class="side-list-item quote-item side-color-ffe2e2 py-3 px-4 border-top d-flex align-items-center"
+                    >
+                      <div class="num">#368</div>
+                      <div class="ms-3">
+                        <h4>Aprtment 3</h4>
+                        <p class="date w-100 d-block">Jan 13, 2021</p>
+                      </div>
+                      <div class="dots ms-auto align-self-start">
+                        <a href="javascript:void(0)">
+                          <i class="fas fa-ellipsis-h"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quote Item 5 -->
+                <div
+                  class="side-list-item quote-item side-color-2680eb py-3 px-4 border-top d-flex align-items-center"
+                >
+                  <div class="num">#365</div>
+                  <div class="ms-3">
+                    <h4>Quote Title</h4>
+                    <p class="date w-100 d-block">
+                      Jan 13, 2021<i
+                        style="color: #ff9292"
+                        class="fas fa-exclamation-circle ms-1"
+                      ></i>
+                    </p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Quote Item 6 -->
+                <div
+                  class="side-list-item quote-item side-color-2680eb py-3 px-4 border-top d-flex align-items-center"
+                >
+                  <div class="num">#379</div>
+                  <div class="ms-3">
+                    <h4>Quote Title</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Quote Item 7 -->
+                <div
+                  class="side-list-item quote-item side-color-2680eb py-3 px-4 border-top d-flex align-items-center"
+                >
+                  <div class="num">#365</div>
+                  <div class="ms-3">
+                    <h4>Quote Title</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Quote Item 8 -->
+                <div
+                  class="side-list-item quote-item side-color-ffafaf py-3 px-4 border-top d-flex align-items-center"
+                >
+                  <div class="num">#365</div>
+                  <div class="ms-3">
+                    <h4>Quote Title</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Quote Item 9 -->
+                <div
+                  class="side-list-item quote-item side-color-none py-3 px-4 border-top d-flex align-items-center"
+                >
+                  <div class="num">#365</div>
+                  <div class="ms-3">
+                    <h4>Quote Title</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tabs -->
+          <div class="col-xl-9 col-xxl-10">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <!-- Quote Details -->
+              <li class="nav-item quote-details m-0" role="presentation">
+                <a
+                  class="nav-link active border-0"
+                  id="quote-details-tab"
+                  data-bs-toggle="tab"
+                  href="#quote-details"
+                  role="tab"
+                  aria-controls="quote-details"
+                  aria-selected="true"
+                  >Quote Details</a
+                >
+              </li>
+              <!-- Customer INFO -->
+              <li class="nav-item customer-info m-0" role="presentation">
+                <a
+                  class="nav-link border-0"
+                  id="customer-info-tab"
+                  data-bs-toggle="tab"
+                  href="#customer-info"
+                  role="tab"
+                  aria-controls="customer-info"
+                  aria-selected="true"
+                  >Customer INFO</a
+                >
+              </li>
+              <!-- Shipping INFO -->
+              <li class="nav-item shipping-info m-0" role="presentation">
+                <a
+                  class="nav-link border-0"
+                  id="shipping-info-tab"
+                  data-bs-toggle="tab"
+                  href="#shipping-info"
+                  role="tab"
+                  aria-controls="shipping-info"
+                  aria-selected="true"
+                  >Shipping INFO</a
+                >
+              </li>
+              <!-- Files -->
+              <li class="nav-item files m-0" role="presentation">
+                <a
+                  class="nav-link border-0"
+                  id="files-tab"
+                  data-bs-toggle="tab"
+                  href="#files"
+                  role="tab"
+                  aria-controls="files"
+                  aria-selected="true"
+                  >Files</a
+                >
+              </li>
+              <!-- Notes -->
+              <li class="nav-item notes m-0" role="presentation">
+                <a
+                  class="nav-link border-0"
+                  id="notes-tab"
+                  data-bs-toggle="tab"
+                  href="#notes"
+                  role="tab"
+                  aria-controls="notes"
+                  aria-selected="true"
+                  >Notes</a
+                >
+              </li>
+              <!-- Search Customer -->
+              <span class="align-self-center m-auto search-customer">
+                <span class="d-flex">
+                  <form>
+                    <input
+                      placeholder="Search Customer"
+                      class="border-0 rounded-0"
+                      type="text"
+                    />
+                    <button class="border-0">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </span>
+              </span>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <!-- Quote Details -->
+              <div
+                class="tab-pane fade show active p-3 pt-5"
+                id="quote-details"
+                role="tabpanel"
+                aria-labelledby="quote-details-tab"
+              >
+                <div class="row">
+                  <div class="col-9">
+                    <div
+                      class="d-m-w-1600-block d-flex align-items-center border-bottom pb-4"
+                    >
+                      <div>
+                        <h4>Apartment 2 <i class="far fa-edit ms-1"></i></h4>
+                      </div>
+                      <div class="quick-details-buttons ms-auto mt-m-w-1600-5">
+                        <a
+                          class="button add-apartment-btn"
+                          href="javascript:void(0)"
+                          ><img
+                            style="margin-top: -2px"
+                            src="img/quotes/plus-circle.svg"
+                            alt="plus"
+                            class="img-fluid me-1"
+                          />Add Apartment
+                        </a>
+                        <a class="button reset-btn" href="javascript:void(0)"
+                          ><img
+                            style="margin-top: -2px"
+                            src="img/quotes/reset.svg"
+                            alt="plus"
+                            class="img-fluid me-1"
+                          />Reset</a
+                        >
+                        <span class="button upload-quote-btn">
+                          <img
+                            src="img/quotes/upload.svg"
+                            alt="plus"
+                            class="img-fluid me-1"
+                          />
+                          <input id="upload-quote" name="photo" type="file" />
+                          <label for="upload-quote">Upload Quote</label>
+                        </span>
+                        <span class="dropdown">
+                          <a
+                            class="button dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Customer Tier
+                          </a>
+
+                          <span
+                            class="dropdown-menu border-0"
+                            aria-labelledby="dropdownMenuLink1"
+                          >
+                            <span>
+                              <label
+                                class="d-flex align-items-center dropdown-item"
+                                for="first-check-1"
+                              >
+                                <input type="checkbox" id="first-check-1" />
+                                <span class="ms-1">Lebel 1</span>
+                              </label>
+                            </span>
+                            <span>
+                              <label
+                                class="d-flex align-items-center dropdown-item"
+                                for="second-check-1"
+                              >
+                                <input type="checkbox" id="second-check-1" />
+                                <span class="ms-1">Lebel 2</span>
+                              </label>
+                            </span>
+                            <span>
+                              <label
+                                class="d-flex align-items-center dropdown-item"
+                                for="third-check-1"
+                              >
+                                <input type="checkbox" id="third-check-1" />
+                                <span class="ms-1">Lebel 3</span>
+                              </label>
+                            </span>
+                            <span>
+                              <form class="dropdoen-item px-2 my-4">
+                                <div class="w-100 position-relative">
+                                  <input
+                                    type="text"
+                                    class="btn btn-outline-light bg-white mw-100 text-start"
+                                    placeholder="Curstom Amount"
+                                  />
+                                  <button
+                                    class="position-absolute m-0 p-0 border-0"
+                                  >
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                  </button>
+                                </div>
+                              </form>
+                            </span>
+                          </span>
+                        </span>
+                        <span class="button select-btn position-relative">
+                          <div class="d-inline px-2">
+                            <select class="border-0">
+                              <option value="MAKELLOS">MAKELLOS</option>
+                              <option value="Company 1">Company 1</option>
+                              <option value="Company 2">Company 2</option>
+                              <option value="Company 3">Company 1</option>
+                            </select>
+                          </div>
+                          <i
+                            class="fas fa-caret-down ms-2 text-dark position-absolute"
+                          ></i>
+                        </span>
+                        <span class="button select-btn position-relative">
+                          <div class="d-inline px-2">
+                            <select class="border-0">
+                              <option value="Shake White">Shake White</option>
+                              <option value="Style 1">Style 1</option>
+                              <option value="Style 2">Style 2</option>
+                              <option value="Style 3">Style 1</option>
+                            </select>
+                          </div>
+                          <i
+                            class="fas fa-caret-down ms-2 text-dark position-absolute"
+                          ></i>
+                        </span>
+                      </div>
+                    </div>
+                    <!-- table -->
+                    <table class="table mt-3">
+                      <thead>
+                        <tr>
+                          <th class="ps-3 py-3" scope="col">Item</th>
+                          <th class="py-3" scope="col">Supplier</th>
+                          <th class="py-3" scope="col">sku</th>
+                          <th class="py-3" scope="col">Description</th>
+                          <th class="py-3" scope="col">QTY</th>
+                          <th colspan="2" class="pe-3 py-3" scope="col">
+                            Price
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Table Row -->
+                        <tr>
+                          <td class="p-2 ps-0">
+                            <input
+                              type="text"
+                              placeholder="Example"
+                              class="w-100 border-0 px-2"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <div
+                              class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                            >
+                              <select class="border-0 w-100">
+                                <option value="Example">Example</option>
+                                <option value="Example 2">Example 2</option>
+                              </select>
+                              <i
+                                class="fas fa-caret-down ms-2 text-dark position-absolute"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="p-2">
+                            <div
+                              class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                            >
+                              <select class="border-0 w-100">
+                                <option value="Example">Example</option>
+                                <option value="Example 2">Example 2</option>
+                              </select>
+                              <i
+                                class="fas fa-caret-down ms-2 text-dark position-absolute"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="p-2">
+                            <input
+                              type="text"
+                              placeholder="Example"
+                              class="w-100 border-0 px-2"
+                            />
+                          </td>
+                          <td class="p-2 qty-td">
+                            <input
+                              value="#"
+                              type="text"
+                              class="qty px-2 border-0"
+                            />
+                          </td>
+                          <td class="p-2 price-td">
+                            <input
+                              class="price text-center px-2 border-0"
+                              value="$635,415"
+                            />
+                          </td>
+                          <td class="p-2 pe-0">
+                            <div class="delete px-2 text-center">
+                              <a href="javascript:void(0)"
+                                ><i class="fas fa-trash"></i
+                              ></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- Table Row -->
+                        <tr>
+                          <td class="p-2 ps-0">
+                            <input
+                              type="text"
+                              placeholder="Example"
+                              class="w-100 border-0 px-2"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <div
+                              class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                            >
+                              <select class="border-0 w-100">
+                                <option value="Example">Example</option>
+                                <option value="Example 2">Example 2</option>
+                              </select>
+                              <i
+                                class="fas fa-caret-down ms-2 text-dark position-absolute"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="p-2">
+                            <div
+                              class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                            >
+                              <select class="border-0 w-100">
+                                <option value="Example">Example</option>
+                                <option value="Example 2">Example 2</option>
+                              </select>
+                              <i
+                                class="fas fa-caret-down ms-2 text-dark position-absolute"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="p-2">
+                            <input
+                              type="text"
+                              placeholder="Example"
+                              class="w-100 border-0 px-2"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <input
+                              value="#"
+                              type="text"
+                              class="qty px-2 border-0"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <input
+                              class="price text-center px-2 border-0"
+                              value="$635,415"
+                            />
+                          </td>
+                          <td class="p-2 pe-0">
+                            <div class="delete px-2 text-center">
+                              <a href="javascript:void(0)"
+                                ><i class="fas fa-trash"></i
+                              ></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- Table Row -->
+                        <tr>
+                          <td class="p-2 ps-0">
+                            <input
+                              type="text"
+                              placeholder="Example"
+                              class="w-100 border-0 px-2"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <div
+                              class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                            >
+                              <select class="border-0 w-100">
+                                <option value="Example">Example</option>
+                                <option value="Example 2">Example 2</option>
+                              </select>
+                              <i
+                                class="fas fa-caret-down ms-2 text-dark position-absolute"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="p-2">
+                            <div
+                              class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                            >
+                              <select class="border-0 w-100">
+                                <option value="Example">Example</option>
+                                <option value="Example 2">Example 2</option>
+                              </select>
+                              <i
+                                class="fas fa-caret-down ms-2 text-dark position-absolute"
+                              ></i>
+                            </div>
+                          </td>
+                          <td class="p-2">
+                            <input
+                              type="text"
+                              placeholder="Example"
+                              class="w-100 border-0 px-2"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <input
+                              value="#"
+                              type="text"
+                              class="qty px-2 border-0"
+                            />
+                          </td>
+                          <td class="p-2">
+                            <input
+                              class="price text-center px-2 border-0"
+                              value="$635,415"
+                            />
+                          </td>
+                          <td class="p-2 pe-0">
+                            <div class="delete px-2 text-center">
+                              <a href="javascript:void(0)"
+                                ><i class="fas fa-trash"></i
+                              ></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="add-new-row-btn text-center my-2">
+                      <a href="javascript:void(0)" class="w-100 h-100 d-block"
+                        >Add a new row</a
+                      >
+                    </div>
+                  </div>
+                  <!-- Side Notes -->
+                  <div class="col-3">
+                    <div class="side-notes">
+                      <div>
+                        <!-- Notes -->
+                        <h4>Notes</h4>
+                        <textarea
+                          placeholder="Thanks for your business"
+                          class="thanks-for-your-business w-100 my-3 p-2 border-0"
+                        ></textarea>
+                      </div>
+                      <!-- Attach Files -->
+                      <div>
+                        <h4>Attach Files</h4>
+                        <div
+                          class="my-3 file-uploader w-100 d-flex align-items-center justify-content-center"
+                        >
+                          <p>
+                            Drag Files or
+                            <label for="upload-photo-1">Browse</label>
+                            <input
+                              type="file"
+                              name="photo"
+                              id="upload-photo-1"
+                            />
+                          </p>
+                        </div>
+                        <div class="upload-file my-2">
+                          <div class="meida d-flex align-items-center">
+                            <span class="me-3">Image.jpeg</span>
+                            <div class="media-body align-self-center">
+                              <div class="upload-processing w-100 bg-light">
+                                <div
+                                  style="width: 50%"
+                                  class="bg-primary uploaded-size"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="upload-file my-2">
+                          <div class="meida d-flex align-items-center">
+                            <span class="me-3">Image.jpeg</span>
+                            <div class="media-body align-self-center">
+                              <div class="upload-processing w-100 bg-light">
+                                <div
+                                  style="width: 35%"
+                                  class="bg-primary uploaded-size"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="upload-file my-2">
+                          <div class="meida d-flex align-items-center">
+                            <span class="me-3">Image.jpeg</span>
+                            <div class="media-body align-self-center">
+                              <a
+                                href="javascript:void(0)"
+                                class="border-0 upload-failed"
+                              >
+                                <i class="fas fa-times"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Notes Price -->
+                      <div class="notes-price">
+                        <div class="border-top py-4 my-4">
+                          <div
+                            class="subtotal d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Subtotal</h4>
+                            <h4>$0.00</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Discount</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Tax</h4>
+                          </div>
+                          <div class="total-price border-top mt-4">
+                            <div
+                              class="total d-flex justify-content-between align-items-center my-2"
+                            >
+                              <h4>Total</h4>
+                              <h4>$0.00</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Currency -->
+                      <div class="currency">
+                        <h4>Currency</h4>
+                        <div class="currency-select mt-3">
+                          <div
+                            class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                          >
+                            <select class="border-0 w-100">
+                              <option value="USD">USD</option>
+                              <option value="Euro">Euro</option>
+                              <option value="TAKA ">TAKA</option>
+                            </select>
+                            <i
+                              class="fas fa-caret-down ms-2 text-dark position-absolute"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Print & Share -->
+                      <div
+                        class="print-and-share d-flex justify-content-between mt-5"
+                      >
+                        <div class="print">
+                          <a onclick="window.print()" href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/printer.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Print</a
+                          >
+                        </div>
+                        <div class="share">
+                          <a href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/share.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Save -->
+                      <div class="saves">
+                        <div class="save text-center w-100 mt-4">
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save</a
+                          >
+                        </div>
+                        <div
+                          class="save-as-new-template text-center w-100 mt-4"
+                        >
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save as new template</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Customer INFO -->
+              <div
+                class="tab-pane fade p-3 pt-5"
+                id="customer-info"
+                role="tabpanel"
+                aria-labelledby="customer-info-tab"
+              >
+                <div class="row">
+                  <div class="col-9">
+                    <!-- Shipping From -->
+                    <div class="shipping-from">
+                      <p style="color: #cfcfcf">Shipping From</p>
+                      <h4>Quibic Company</h4>
+                      <div class="details mt-3">
+                        <div class="d-flex align-items-center my-2">
+                          <h6>Full name</h6>
+                          <p>John Doe</p>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                          <h6>State</h6>
+                          <p>California, USA</p>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                          <h6>City</h6>
+                          <p>Phoenix City</p>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                          <h6>Zipcode</h6>
+                          <p>13217</p>
+                        </div>
+                        <div class="d-flex align-items-center my-2 mt-4">
+                          <h6>Phone</h6>
+                          <p>+1 132 654 8974</p>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                          <h6>Email</h6>
+                          <p>yourmail@mail.com</p>
+                        </div>
+                        <div class="d-flex align-items-center my-4">
+                          <h6>Date:</h6>
+                          <p>Jan 15, 2021</p>
+                        </div>
+                      </div>
+                      <div class="button-box mt-2">
+                        <a
+                          href="javascript:void(0)"
+                          class="btn btn-outline-danger bg-white"
+                          >Edit</a
+                        >
+                      </div>
+                    </div>
+                    <!-- First Time -->
+                    <!-- <h4>Customer Type</h4>
+                    <div class="buttons mt-4">
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-primary px-5 py-2 me-3"
+                        >Existing Customer</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-primary px-5 py-2"
+                        >New Customer</a
+                      >
+                    </div> -->
+                  </div>
+                  <!-- Side Notes -->
+                  <div class="col-3">
+                    <div class="side-notes">
+                      <div>
+                        <!-- Notes -->
+                        <h4>Notes</h4>
+                        <textarea
+                          placeholder="Thanks for your business"
+                          class="thanks-for-your-business w-100 my-3 p-2 border-0"
+                        ></textarea>
+                      </div>
+                      <!-- Notes Price -->
+                      <div class="notes-price">
+                        <div class="border-top py-4 my-4">
+                          <div
+                            class="subtotal d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Subtotal</h4>
+                            <h4>$0.00</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Discount</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Tax</h4>
+                          </div>
+                          <div class="total-price border-top mt-4">
+                            <div
+                              class="total d-flex justify-content-between align-items-center my-2"
+                            >
+                              <h4>Total</h4>
+                              <h4>$0.00</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Currency -->
+                      <div class="currency">
+                        <h4>Currency</h4>
+                        <div class="currency-select mt-3">
+                          <div
+                            class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                          >
+                            <select class="border-0 w-100">
+                              <option value="USD">USD</option>
+                              <option value="Euro">Euro</option>
+                              <option value="TAKA ">TAKA</option>
+                            </select>
+                            <i
+                              class="fas fa-caret-down ms-2 text-dark position-absolute"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Print & Share -->
+                      <div
+                        class="print-and-share d-flex justify-content-between mt-5"
+                      >
+                        <div class="print">
+                          <a onclick="window.print()" href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/printer.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Print</a
+                          >
+                        </div>
+                        <div class="share">
+                          <a href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/share.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Save -->
+                      <div class="saves">
+                        <div class="save text-center w-100 mt-4">
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save</a
+                          >
+                        </div>
+                        <div
+                          class="save-as-new-template text-center w-100 mt-4"
+                        >
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save as new template</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Shipping INFO -->
+              <div
+                class="tab-pane fade p-3 pt-5"
+                id="shipping-info"
+                role="tabpanel"
+                aria-labelledby="shipping-info-tab"
+              >
+                <div class="row">
+                  <div class="col-9">
+                    <div class="col-12 col-xxl-10">
+                      <div class="row">
+                        <div class="col-6">
+                          <!-- Shipping From -->
+                          <div class="shipping-from">
+                            <p style="color: #cfcfcf">Shipping From</p>
+                            <h4>Quibic Company</h4>
+                            <div class="details mt-3">
+                              <div class="d-flex align-items-center my-2">
+                                <h6>Full name</h6>
+                                <p>John Doe</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>State</h6>
+                                <p>California, USA</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>City</h6>
+                                <p>Phoenix City</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>Zipcode</h6>
+                                <p>13217</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2 mt-4">
+                                <h6>Phone</h6>
+                                <p>+1 132 654 8974</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>Email</h6>
+                                <p>yourmail@mail.com</p>
+                              </div>
+                              <div class="d-flex align-items-center my-4">
+                                <h6>Date:</h6>
+                                <p>Jan 15, 2021</p>
+                              </div>
+                            </div>
+                            <div class="button-box mt-2">
+                              <a
+                                href="javascript:void(0)"
+                                class="btn btn-outline-danger bg-white"
+                                >Edit</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <!-- Shipping To -->
+                          <div class="shipping-to">
+                            <p style="color: #cfcfcf">Shipping To</p>
+                            <h4>Malki1352 Company</h4>
+                            <div class="details mt-3">
+                              <div class="d-flex align-items-center my-2">
+                                <h6>Full name</h6>
+                                <p>John Doe</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>State</h6>
+                                <p>California, USA</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>City</h6>
+                                <p>Phoenix City</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>Zipcode</h6>
+                                <p>13217</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2 mt-4">
+                                <h6>Phone</h6>
+                                <p>+1 132 654 8974</p>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <h6>Email</h6>
+                                <p>yourmail@mail.com</p>
+                              </div>
+                              <div class="d-flex align-items-center my-4">
+                                <h6>Date:</h6>
+                                <p>Jan 15, 2021</p>
+                              </div>
+                            </div>
+                            <div class="button-box mt-2">
+                              <a
+                                href="javascript:void(0)"
+                                class="btn btn-outline-danger bg-white"
+                                >Edit</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Side Notes -->
+                  <div class="col-3">
+                    <div class="side-notes">
+                      <div>
+                        <!-- Notes -->
+                        <h4>Notes</h4>
+                        <textarea
+                          placeholder="Thanks for your business"
+                          class="thanks-for-your-business w-100 my-3 p-2 border-0"
+                        ></textarea>
+                      </div>
+                      <!-- Notes Price -->
+                      <div class="notes-price">
+                        <div class="border-top py-4 my-4">
+                          <div
+                            class="subtotal d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Subtotal</h4>
+                            <h4>$0.00</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Discount</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Tax</h4>
+                          </div>
+                          <div class="total-price border-top mt-4">
+                            <div
+                              class="total d-flex justify-content-between align-items-center my-2"
+                            >
+                              <h4>Total</h4>
+                              <h4>$0.00</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Currency -->
+                      <div class="currency">
+                        <h4>Currency</h4>
+                        <div class="currency-select mt-3">
+                          <div
+                            class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                          >
+                            <select class="border-0 w-100">
+                              <option value="USD">USD</option>
+                              <option value="Euro">Euro</option>
+                              <option value="TAKA ">TAKA</option>
+                            </select>
+                            <i
+                              class="fas fa-caret-down ms-2 text-dark position-absolute"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Print & Share -->
+                      <div
+                        class="print-and-share d-flex justify-content-between mt-5"
+                      >
+                        <div class="print">
+                          <a onclick="window.print()" href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/printer.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Print</a
+                          >
+                        </div>
+                        <div class="share">
+                          <a href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/share.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Save -->
+                      <div class="saves">
+                        <div class="save text-center w-100 mt-4">
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save</a
+                          >
+                        </div>
+                        <div
+                          class="save-as-new-template text-center w-100 mt-4"
+                        >
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save as new template</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Files -->
+              <div
+                class="tab-pane fade p-3 pt-5"
+                id="files"
+                role="tabpanel"
+                aria-labelledby="files-tab"
+              >
+                <div class="row">
+                  <div class="col-9">
+                    <div class="col-6">
+                      <!-- Attach Files -->
+                      <div>
+                        <h4>Attach Files</h4>
+                        <div
+                          class="my-3 file-uploader w-100 d-flex align-items-center justify-content-center"
+                        >
+                          <p>
+                            Drag Files or
+                            <label for="upload-photo-2">Browse</label>
+                            <input
+                              type="file"
+                              name="photo"
+                              id="upload-photo-2"
+                            />
+                          </p>
+                        </div>
+                        <div class="mt-4">
+                          <div
+                            class="d-flex justify-content-between align-items-center my-2"
+                          >
+                            <p>image.jpeg</p>
+                            <a href="javascript:void(0)">Download</a>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center my-2"
+                          >
+                            <p>image01.jpeg</p>
+                            <a href="javascript:void(0)">Download</a>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center my-2"
+                          >
+                            <p>image03.jpeg</p>
+                            <a href="javascript:void(0)">Download</a>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center my-2"
+                          >
+                            <p>image.jpeg</p>
+                            <a href="javascript:void(0)">Download</a>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center my-2"
+                          >
+                            <p>image01.jpeg</p>
+                            <a href="javascript:void(0)">Download</a>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center my-2"
+                          >
+                            <p>image03.jpeg</p>
+                            <a href="javascript:void(0)">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Side Notes -->
+                  <div class="col-3">
+                    <div class="side-notes">
+                      <div>
+                        <!-- Notes -->
+                        <h4>Notes</h4>
+                        <textarea
+                          placeholder="Thanks for your business"
+                          class="thanks-for-your-business w-100 my-3 p-2 border-0"
+                        ></textarea>
+                      </div>
+                      <!-- Notes Price -->
+                      <div class="notes-price">
+                        <div class="border-top py-4 my-4">
+                          <div
+                            class="subtotal d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Subtotal</h4>
+                            <h4>$0.00</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Discount</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Tax</h4>
+                          </div>
+                          <div class="total-price border-top mt-4">
+                            <div
+                              class="total d-flex justify-content-between align-items-center my-2"
+                            >
+                              <h4>Total</h4>
+                              <h4>$0.00</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Currency -->
+                      <div class="currency">
+                        <h4>Currency</h4>
+                        <div class="currency-select mt-3">
+                          <div
+                            class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                          >
+                            <select class="border-0 w-100">
+                              <option value="USD">USD</option>
+                              <option value="Euro">Euro</option>
+                              <option value="TAKA ">TAKA</option>
+                            </select>
+                            <i
+                              class="fas fa-caret-down ms-2 text-dark position-absolute"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Print & Share -->
+                      <div
+                        class="print-and-share d-flex justify-content-between mt-5"
+                      >
+                        <div class="print">
+                          <a onclick="window.print()" href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/printer.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Print</a
+                          >
+                        </div>
+                        <div class="share">
+                          <a href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/share.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Save -->
+                      <div class="saves">
+                        <div class="save text-center w-100 mt-4">
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save</a
+                          >
+                        </div>
+                        <div
+                          class="save-as-new-template text-center w-100 mt-4"
+                        >
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save as new template</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Notes -->
+              <div
+                class="tab-pane fade p-3 pt-5"
+                id="notes"
+                role="tabpanel"
+                aria-labelledby="notes-tab"
+              >
+                <div class="row">
+                  <div class="col-9">
+                    <div class="col-6">
+                      <!-- Notes -->
+                      <div>
+                        <div class="notes">
+                          <h4>Notes</h4>
+                          <div class="note bg-white p-3 mt-4">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <h4>Note 1</h4>
+                              <div class="date">Dec 12, 2020</div>
+                            </div>
+                            <p class="note-text my-2">
+                              Sed ut perspiciatis unde omnis iste natus error
+                              sit voluptatem accusantium doloremque laudantium,
+                              totam rem aperiam
+                            </p>
+                          </div>
+                          <div class="note bg-white p-3 mt-4">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <h4>Note 2</h4>
+                              <div class="date">Dec 12, 2020</div>
+                            </div>
+                            <p class="note-text my-2">
+                              Sed ut perspiciatis unde omnis iste natus error
+                              sit voluptatem accusantium doloremque laudantium,
+                              totam rem aperiam
+                            </p>
+                          </div>
+                          <div class="note bg-white p-3 mt-4">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <h4>Note 3</h4>
+                              <div class="date">Dec 12, 2020</div>
+                            </div>
+                            <p class="note-text my-2">
+                              Sed ut perspiciatis unde omnis iste natus error
+                              sit voluptatem accusantium doloremque laudantium,
+                              totam rem aperiam
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Side Notes -->
+                  <div class="col-3">
+                    <div class="side-notes">
+                      <div>
+                        <!-- Notes -->
+                        <h4>Notes</h4>
+                        <textarea
+                          placeholder="Thanks for your business"
+                          class="thanks-for-your-business w-100 my-3 p-2 border-0"
+                        ></textarea>
+                      </div>
+                      <!-- Notes Price -->
+                      <div class="notes-price">
+                        <div class="border-top py-4 my-4">
+                          <div
+                            class="subtotal d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Subtotal</h4>
+                            <h4>$0.00</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Discount</h4>
+                          </div>
+                          <div
+                            class="add-discount d-flex justify-content-between align-items-center my-2"
+                          >
+                            <h4>Add Tax</h4>
+                          </div>
+                          <div class="total-price border-top mt-4">
+                            <div
+                              class="total d-flex justify-content-between align-items-center my-2"
+                            >
+                              <h4>Total</h4>
+                              <h4>$0.00</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Currency -->
+                      <div class="currency">
+                        <h4>Currency</h4>
+                        <div class="currency-select mt-3">
+                          <div
+                            class="select d-flex justify-content-between px-2 align-items-center position-relative"
+                          >
+                            <select class="border-0 w-100">
+                              <option value="USD">USD</option>
+                              <option value="Euro">Euro</option>
+                              <option value="TAKA ">TAKA</option>
+                            </select>
+                            <i
+                              class="fas fa-caret-down ms-2 text-dark position-absolute"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Print & Share -->
+                      <div
+                        class="print-and-share d-flex justify-content-between mt-5"
+                      >
+                        <div class="print">
+                          <a onclick="window.print()" href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/printer.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Print</a
+                          >
+                        </div>
+                        <div class="share">
+                          <a href="javascript:void(0)"
+                            ><img
+                              style="margin-top: -2px"
+                              src="img/quotes/share.svg"
+                              alt="plus"
+                              class="img-fluid me-1 d-none d-xxl-inline-block"
+                            />Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Save -->
+                      <div class="saves">
+                        <div class="save text-center w-100 mt-4">
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save</a
+                          >
+                        </div>
+                        <div
+                          class="save-as-new-template text-center w-100 mt-4"
+                        >
+                          <a class="w-100 d-block" href="javascript:void(0)"
+                            >Save as new template</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Dashboard Section Here ============================= -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Dropdown Quote -->
+    <script>
+      let dropdownQuote = document.querySelector(".dropdown-quote");
+      let dropdownQuoteItems = document.querySelector(".dropdown-quote-items");
+      dropdownQuote.addEventListener("click", () => {
+        dropdownQuoteItems.classList.toggle("dropdown-quote-items-show");
+      });
+    </script>
+  </body>
+</html>

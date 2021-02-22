@@ -1,0 +1,76 @@
+/* Side List Box */
+.side-list-box {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 18px #00000008;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input[type="search"] {
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+select:focus {
+  outline: none !important;
+}
+select option {
+  font-size: 12px;
+  font-family: "poligon-regular";
+}
+.side-list-box .add-btn {
+  background: #c4ac7a 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+.side-list-box .seacrh {
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+}
+.side-list-box .seacrh input {
+  flex: 1;
+}
+.side-list-box .seacrh .fa-search {
+  color: #c4ac7a;
+}
+.side-color-ffafaf {
+  border-left: 7px solid #ffafaf;
+}
+.side-color-ffe2e2 {
+  border-left: 7px solid #ffe2e2;
+}
+.side-color-2680eb {
+  border-left: 7px solid #2680eb;
+}
+.side-color-none {
+  border-left: 7px solid transparent;
+}
+.side-list-item .num {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  background: #ebebeb 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #2d344a;
+  font-family: "poligon-regular";
+  font-size: 12px;
+}
+.side-list-item p.date {
+  font-size: 14px;
+  font-family: "poligon-regular";
+  color: #c2c8d4;
+  margin-top: 5px;
+}
+.side-list-item .dots i {
+  color: #364a6b;
+}

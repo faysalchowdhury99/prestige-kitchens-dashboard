@@ -1,0 +1,44 @@
+/* ================ */
+/* Header Section */
+/* ================ */
+.back p {
+  color: #2d344a;
+}
+.nav-item {
+  margin: 0 20px;
+}
+.nav-item:first-child {
+  margin-left: 0;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-link {
+  font-size: 14px;
+  border-radius: 4px;
+  color: #2d344a;
+}
+.nav-link:hover {
+  color: #c4ac7a;
+}
+.nav-link i {
+  font-size: 16px;
+  color: #c4ac7a;
+}
+.nav-link i.fa-users {
+  border-bottom: 2.5px solid #3e3643;
+}
+.nav-link.active {
+  background: #c4ac7a 0% 0% no-repeat padding-box;
+  color: #ffffff;
+}
+.nav-link.active i {
+  color: #ffffff;
+}
+.admin h5 {
+  color: #2d344a;
+  font-family: "poligon-bold";
+}
+.admin p {
+  color: #8f8f8f;
+}

@@ -1,0 +1,119 @@
+body {
+  overflow: hidden;
+}
+/* ================ */
+/* Header Section */
+/* ================ */
+.navbar {
+  top: 0;
+  left: 0;
+}
+.admin h5 {
+  color: #000000;
+  font-family: "poligon-bold";
+}
+.admin p {
+  color: #403f3f;
+}
+/* ================ */
+/* Home Section */
+/* ================ */
+.home-section {
+  height: 100vh;
+  background-image: url("../img/home/home-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+@media screen and (min-width: 1800px) {
+  .home-cards {
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+  }
+}
+.home-cards {
+  background-image: url("../img/home/cards-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-card {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "poligon-bold";
+  padding: 50px 40px;
+  box-shadow: 0px 5px 20px #cfcac730;
+  cursor: pointer;
+  height: 100%;
+}
+.customers-card {
+  border-radius: 50px 50px 0px 50px;
+  width: 250px;
+  margin-left: auto;
+}
+.contacts-card {
+  border-radius: 50px 50px 50px 0px;
+  width: 240px;
+  height: 240px;
+}
+.quotes-card {
+  border-radius: 50px;
+  width: 300px;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.suppliers-card {
+  border-radius: 0px 50px 50px 50px;
+  width: 250px;
+  height: 240px;
+}
+@media screen and (max-width: 1399px) {
+  .home-cards {
+    background-size: 50%;
+    background-position: center 60%;
+  }
+  .home-card {
+    padding: 30px 20px !important;
+    vertical-align: middle;
+  }
+  .icon-text img {
+    width: 60px;
+  }
+  .card-buttons a {
+    font-size: 12px;
+  }
+  .customers-card-col,
+  .quotes-card-col {
+    margin-top: 0 !important;
+  }
+  .customers-card {
+    width: 190px;
+    height: 180px;
+  }
+  .contacts-card {
+    width: 170px;
+    height: 170px;
+  }
+  .quotes-card {
+    width: 213px;
+    height: 190px;
+  }
+  .suppliers-card {
+    width: 180px;
+    height: 170px;
+  }
+}
+.card-buttons {
+  display: none;
+}
+.card-buttons a {
+  background: #f6e9db 0% 0% no-repeat padding-box;
+  border-radius: 14px;
+  padding: 15px;
+  color: #736032;
+  font-family: "poligon-semi-bold";
+}

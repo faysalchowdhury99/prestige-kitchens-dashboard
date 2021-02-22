@@ -1,0 +1,7 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="plus-circle">
+    <rect id="Rectangle_327" data-name="Rectangle 327" width="16" height="16" fill="#fff" opacity="0"/>
+    <path id="Path_41" data-name="Path 41" d="M8.667,2a6.667,6.667,0,1,0,6.667,6.667A6.667,6.667,0,0,0,8.667,2Zm0,12A5.333,5.333,0,1,1,14,8.667,5.333,5.333,0,0,1,8.667,14Z" transform="translate(-0.667 -0.667)" fill="#fff"/>
+    <path id="Path_42" data-name="Path 42" d="M12.667,10H11.333V8.667a.667.667,0,0,0-1.333,0V10H8.667a.667.667,0,1,0,0,1.333H10v1.333a.667.667,0,0,0,1.333,0V11.333h1.333a.667.667,0,0,0,0-1.333Z" transform="translate(-2.667 -2.667)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Title & Favicon -->
+    <title>Customer</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/side-list.css" />
+    <link rel="stylesheet" href="css/customer.css" />
+  </head>
+  <body>
+    <!-- ============================= Start Header Section Here ============================= -->
+    <header class="header-section">
+      <nav
+        class="navbar navbar-expand-lg bg-white py-4 px-xxl-5 align-items-center border-bottom"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/quotes/logo.png" alt="logo" class="img-fluid"
+          /></a>
+          <a
+            href="javascript:void(0)"
+            class="back d-flex align-items-center ms-5 ps-5"
+          >
+            <img class="me-2" src="img/quotes/back-icon.png" alt="back" />
+            <p class="para-text">Back</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active d-flex align-items-center"
+                  aria-current="page"
+                  href="javascript:void(0)"
+                  ><i class="fas fa-home me-1"></i><span>Home</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                  ><i class="fas fa-users me-1"></i><span>Customers</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    src="img/quotes/suppliers.svg"
+                    alt="suppliers"
+                    class="img-fluid me-1"
+                  />
+                  <span>Suppliers</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                  ><img
+                    src="img/quotes/users.svg"
+                    alt="admin"
+                    class="img-fluid me-1"
+                  /><span>Contacts</span></a
+                >
+              </li>
+            </ul>
+            <a
+              href="javascript:void(0)"
+              class="admin d-flex align-items-center"
+            >
+              <img
+                src="img/quotes/admin.png"
+                alt="admin"
+                class="admin-img me-2"
+              />
+              <div class="name">
+                <h5>John Doe</h5>
+                <p>Admin</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================= End Header Section Here ============================= -->
+
+    <!-- ============================= Start Customer Section Here ============================= -->
+    <section class="customer-section">
+      <div class="container">
+        <div class="row">
+          <!-- Side List Item -->
+          <div class="col-lg-3 col-xxl-3 h-100">
+            <div class="side-list-box customer-box">
+              <!-- Select and Plus Button -->
+              <div class="px-3 pt-3 d-flex align-items-center">
+                <h4>All Customers</h4>
+                <button class="add-btn border-0 ms-auto">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <!-- Search -->
+              <div class="px-3">
+                <form
+                  action="javascript:void(0)"
+                  class="seacrh my-3 d-flex align-items-center px-2"
+                >
+                  <input
+                    class="border-0 py-2"
+                    type="search"
+                    name="Seacrh"
+                    placeholder="Search Customers"
+                  />
+                  <button class="border-0" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <!-- customer Items -->
+              <div class="side-list-item customer-item">
+                <!-- customer 1 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 2 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 3 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 4 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 5 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 6 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 7 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 8 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Customers Information -->
+          <div class="col-lg-9 co-xl-9 h-100">
+            <button class="border-0 bg-white customer-info-title">
+              Customer Information
+            </button>
+            <!-- Customers Info -->
+            <div class="customers-info bg-white">
+              <!-- Customer Details -->
+              <div class="customer-details">
+                <div class="d-flex align-items-center">
+                  <h4>Quibic Company</h4>
+                  <button class="btn btn-outline-danger ms-2 py-1 px-3">
+                    Edit
+                  </button>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-6">
+                    <div class="details">
+                      <div class="d-flex align-items-center my-2">
+                        <h6>Full name</h6>
+                        <p>John Doe</p>
+                      </div>
+                      <div class="d-flex align-items-center my-2">
+                        <h6>State</h6>
+                        <p>California, USA</p>
+                      </div>
+                      <div class="d-flex align-items-center my-2">
+                        <h6>City</h6>
+                        <p>Phoenix City</p>
+                      </div>
+                      <div class="d-flex align-items-center my-2">
+                        <h6>Zipcode</h6>
+                        <p>13217</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="details">
+                      <div class="d-flex align-items-center my-2">
+                        <h6>Phone</h6>
+                        <p>+1 132 654 8974</p>
+                      </div>
+                      <div class="d-flex align-items-center my-2">
+                        <h6>Email</h6>
+                        <p>yourmail@mail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Customer Quotes -->
+              <div class="customer-quotes mt-5">
+                <div class="d-flex align-items-center">
+                  <h4>Quote List</h4>
+                  <a
+                    href="create-quote.html"
+                    class="btn btn-outline-primary ms-2 py-1 px-3"
+                  >
+                    Create new Quotes
+                  </a>
+                </div>
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="ps-3 py-3" scope="col">Quotes Tiltle</th>
+                      <th class="py-3" scope="col">Type</th>
+                      <th class="py-3" scope="col">Shipping Address</th>
+                      <th class="py-3" scope="col">Email</th>
+                      <th class="py-3" scope="col">Status</th>
+                      <th class="py-3" scope="col">Amount</th>
+                      <th colspan="2" class="pe-3 py-3" scope="col">
+                        09 Dec 2019
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Table Row -->
+                    <tr>
+                      <td class="quote-title d-flex align-items-center">
+                        <div class="round-checkbox me-4">
+                          <input type="checkbox" id="quote-title-checkbox-1" />
+                          <label for="quote-title-checkbox-1"></label>
+                        </div>
+                        <span>Quote Title</span>
+                      </td>
+                      <td class="type">
+                        <p class="master-mode">Master Mode</p>
+                      </td>
+                      <td class="shipping-address">
+                        <p>Phoenix City</p>
+                      </td>
+                      <td class="email">
+                        <p>your@mail.com</p>
+                      </td>
+                      <td class="status">
+                        <p>In Progress</p>
+                      </td>
+                      <td class="amount">
+                        <p>$34,654</p>
+                      </td>
+                      <td class="date">
+                        <p>09 Dec 2019</p>
+                      </td>
+                      <td>
+                        <div class="delete py-1 px-2 text-center">
+                          <a href="javascript:void(0)"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Table Row -->
+                    <tr class="align-items-center">
+                      <td class="quote-title d-flex align-items-center">
+                        <div class="round-checkbox me-4">
+                          <input type="checkbox" id="quote-title-checkbox-2" />
+                          <label for="quote-title-checkbox-2"></label>
+                        </div>
+                        <span>Quote Title</span>
+                      </td>
+                      <td class="type">
+                        <p class="individual-mode">Individual mode</p>
+                      </td>
+                      <td class="shipping-address">
+                        <p>Phoenix City</p>
+                      </td>
+                      <td class="email">
+                        <p>your@mail.com</p>
+                      </td>
+                      <td class="status">
+                        <p>In Progress</p>
+                      </td>
+                      <td class="amount">
+                        <p>$34,654</p>
+                      </td>
+                      <td class="date">
+                        <p>09 Dec 2019</p>
+                      </td>
+                      <td>
+                        <div class="delete py-1 px-2 text-center">
+                          <a href="javascript:void(0)"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Table Row -->
+                    <tr class="align-items-center">
+                      <td class="quote-title d-flex align-items-center">
+                        <div class="round-checkbox me-4">
+                          <input type="checkbox" id="quote-title-checkbox-3" />
+                          <label for="quote-title-checkbox-3"></label>
+                        </div>
+                        <span>Quote Title</span>
+                      </td>
+                      <td class="type">
+                        <p class="individual-mode">Individual mode</p>
+                      </td>
+                      <td class="shipping-address">
+                        <p>Phoenix City</p>
+                      </td>
+                      <td class="email">
+                        <p>your@mail.com</p>
+                      </td>
+                      <td class="status">
+                        <p>In Progress</p>
+                      </td>
+                      <td class="amount">
+                        <p>$34,654</p>
+                      </td>
+                      <td class="date">
+                        <p>09 Dec 2019</p>
+                      </td>
+                      <td>
+                        <div class="delete py-1 px-2 text-center">
+                          <a href="javascript:void(0)"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Table Row -->
+                    <tr class="align-items-center">
+                      <td class="quote-title d-flex align-items-center">
+                        <div class="round-checkbox me-4">
+                          <input type="checkbox" id="quote-title-checkbox-4" />
+                          <label for="quote-title-checkbox-4"></label>
+                        </div>
+                        <span>Quote Title</span>
+                      </td>
+                      <td class="type">
+                        <p class="master-mode">Master mode</p>
+                      </td>
+                      <td class="shipping-address">
+                        <p>Phoenix City</p>
+                      </td>
+                      <td class="email">
+                        <p>your@mail.com</p>
+                      </td>
+                      <td class="status">
+                        <p>In Progress</p>
+                      </td>
+                      <td class="amount">
+                        <p>$34,654</p>
+                      </td>
+                      <td class="date">
+                        <p>09 Dec 2019</p>
+                      </td>
+                      <td>
+                        <div class="delete py-1 px-2 text-center">
+                          <a href="javascript:void(0)"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Customer Section Here ============================= -->
+  </body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Title & Favicon -->
+    <title>Customer</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/side-list.css" />
+    <link rel="stylesheet" href="css/customer.css" />
+  </head>
+  <body>
+    <!-- ============================= Start Header Section Here ============================= -->
+    <header class="header-section">
+      <nav
+        class="navbar navbar-expand-lg bg-white py-4 px-xxl-5 align-items-center border-bottom"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/quotes/logo.png" alt="logo" class="img-fluid"
+          /></a>
+          <a
+            href="javascript:void(0)"
+            class="back d-flex align-items-center ms-5 ps-5"
+          >
+            <img class="me-2" src="img/quotes/back-icon.png" alt="back" />
+            <p class="para-text">Back</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active d-flex align-items-center"
+                  aria-current="page"
+                  href="javascript:void(0)"
+                  ><i class="fas fa-home me-1"></i><span>Home</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                  ><i class="fas fa-users me-1"></i><span>Customers</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    src="img/quotes/suppliers.svg"
+                    alt="suppliers"
+                    class="img-fluid me-1"
+                  />
+                  <span>Suppliers</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="javascript:void(0)"
+                  ><img
+                    src="img/quotes/users.svg"
+                    alt="admin"
+                    class="img-fluid me-1"
+                  /><span>Contacts</span></a
+                >
+              </li>
+            </ul>
+            <a
+              href="javascript:void(0)"
+              class="admin d-flex align-items-center"
+            >
+              <img
+                src="img/quotes/admin.png"
+                alt="admin"
+                class="admin-img me-2"
+              />
+              <div class="name">
+                <h5>John Doe</h5>
+                <p>Admin</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================= End Header Section Here ============================= -->
+
+    <!-- ============================= Start Customer Section Here ============================= -->
+    <section class="customer-section">
+      <div class="container">
+        <div class="row">
+          <!-- Side List Item -->
+          <div class="col-lg-3 col-xxl-3 h-100">
+            <div class="side-list-box customer-box">
+              <!-- Select and Plus Button -->
+              <div class="px-3 pt-3 d-flex align-items-center">
+                <h4>All Customers</h4>
+                <button class="add-btn border-0 ms-auto">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <!-- Search -->
+              <div class="px-3">
+                <form
+                  action="javascript:void(0)"
+                  class="seacrh my-3 d-flex align-items-center px-2"
+                >
+                  <input
+                    class="border-0 py-2"
+                    type="search"
+                    name="Seacrh"
+                    placeholder="Search Customers"
+                  />
+                  <button class="border-0" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <!-- customer Items -->
+              <div class="side-list-item customer-item">
+                <!-- customer 1 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 2 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 3 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 4 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 5 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 6 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 7 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- customer 8 -->
+                <div
+                  class="side-list-item customer-item py-3 px-2 border-top d-flex align-items-center"
+                >
+                  <div class="ms-3">
+                    <h4>Name001</h4>
+                    <p class="date w-100 d-block">Jan 13, 2021</p>
+                  </div>
+                  <div class="dots ms-auto align-self-start">
+                    <a href="javascript:void(0)">
+                      <i class="fas fa-ellipsis-h"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Customers Information -->
+          <div class="col-lg-9 co-xl-9 h-100">
+            <button class="border-0 bg-white customer-info-title">
+              Customer Information
+            </button>
+            <!-- Customers Info -->
+            <div class="customers-info bg-white">
+              <!-- Customer Details -->
+              <div class="customer-details">
+                <h4>Customer Details</h4>
+                <form action="customer.html" class="mt-5">
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    class="border-0 p-2 new-customer-details-input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Zipcode"
+                    class="border-0 p-2 new-customer-details-input ms-3"
+                  />
+                  <br /><br />
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="border-0 p-2 new-customer-details-input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone number"
+                    class="border-0 p-2 new-customer-details-input ms-3"
+                  />
+                  <br /><br />
+                  <input
+                    type="text"
+                    placeholder="State"
+                    class="border-0 p-2 new-customer-details-input"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="border-0 p-2 new-customer-details-input ms-3"
+                  />
+                  <br /><br />
+                  <input
+                    type="text"
+                    placeholder="City"
+                    class="border-0 p-2 new-customer-details-input"
+                  />
+                  <br /><br />
+                  <button class="btn btn-primary px-5 py-2 me-3 d-block mt-3">
+                    Confirm
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Customer Section Here ============================= -->
+  </body>
+</html>
